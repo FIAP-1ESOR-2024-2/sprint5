@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import agotechLogo from "../assets/agriculture.svg"
 
 function Footer() { 
@@ -15,10 +16,26 @@ function Footer() {
                 </div>
                 <div class="col-4">                
                     <ul>
-                        <li><a href="./contact.html" class="nav-text">Fale Conosco</a></li>
-                        <li><a href="#" class="nav-text">Sobre nós</a></li>
-                        <li><a href="#" class="nav-text">Políticas de privacidade</a></li>
-                        <li><a href="#" class="nav-text">Termos de utilização</a></li>
+                        <li>
+                            <Link to="/contact" class="nav-text">
+                                Fale Conosco
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="*" class="nav-text">
+                                Sobre nós
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="*" class="nav-text">
+                                Políticas de privacidade
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="*" class="nav-text">
+                                Termos de utilização
+                            </Link>
+                        </li>
                     </ul>
                 </div>            
             </div>
