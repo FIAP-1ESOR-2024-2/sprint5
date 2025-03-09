@@ -11,6 +11,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #343E3D;
 }
 
 a {
@@ -45,8 +46,4 @@ a {
 .error-message {
     color: red;
     font-size: 1em;
-}
-
-footer-bar {
-    margin-top: auto;
 }

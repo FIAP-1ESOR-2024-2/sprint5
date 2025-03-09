@@ -4,7 +4,7 @@ import agotechLogo from "../assets/agriculture.svg"
 function Footer() { 
     return (
         <>
-            <div class="row">
+            <div class="row p-3 bg-secondary shadow-sm mt-auto">
                 <div class="col-6">
                     <div class="d-flex align-items-center">
                         <img src={agotechLogo} alt="Logo Agrotech" class="me-3 main-logo" />
