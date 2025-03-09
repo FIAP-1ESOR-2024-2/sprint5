@@ -1,35 +1,130 @@
 import { ArrowFatLeft, SignIn, UserCircle } from "@phosphor-icons/react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import {useState} from "react";
 
 function RegisterPage() {
+    const navigate = useNavigate()
+
+    const [email, setEmail] = useState('')
+    const [confirmEmail, setConfirmEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
+
+    const [emailError, setEmailError] = useState('')
+    const [passwordError, setPasswordError] = useState('')
+
+    // Validate email
+    const validateEmail = (email) => {
+        // Check for @ symbol
+        if (!email.includes('@')) {
+            setEmailError('Email inválido')
+            return false
+        }
+
+        // Check for valid domain
+        const parts = email.split('@')
+        if (parts.length !== 2 || !parts[1].includes('.') || parts[1].length < 3) {
+            setEmailError('Email inválido')
+            return false;
+        }
+
+        setEmailError('')
+        return true
+    };
+
+    // Validate password
+    const validatePassword = (password) => {
+        if (password.length < 6) {
+            setPasswordError('Senha inválida')
+            return false
+        }
+
+        setPasswordError('')
+        return true
+    };
+
+    // Handle form submission
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        const isEmailValid = validateEmail(email)
+        const isPasswordValid = validatePassword(password)
+
+        // If validation passes, you can proceed with registration
+        if (isEmailValid && isPasswordValid) {
+            console.log('Form is valid, submitting...')
+
+            navigate("/")
+        }
+    };
     return (
         <>
             <div className="m-5 d-flex flex-column align-items-center">
                 <div className="p-5 bg-white rounded d-flex flex-column align-items-center mw-50">
                     <UserCircle className="main-logo" />
 
-                    <form id="registerForm">
+                    <form id="registerForm" onSubmit={handleSubmit}>
                         <div className="form-group my-2">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" className="form-control" placeholder="Email para cadastro" required />
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                className={`form-control ${emailError ? 'is-invalid' : ''}`}
+                                placeholder="Email para cadastro"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                onBlur={() => validateEmail(email)}
+                                required
+                            />
+                            {emailError && (
+                                <div className="invalid-feedback">
+                                    {emailError}
+                                </div>
+                            )}
                         </div>
                         <div className="form-group my-2">
-                            <label for="confirmEmail">Confirme o Email</label>
-                            <input type="email" id="confirmEmail" className="form-control" placeholder="Confirme o email" required />
+                            <label htmlFor="confirmEmail">Confirme o Email</label>
+                            <input
+                                type="email"
+                                className="form-control"
+                                placeholder="Confirme o email"
+                                value={confirmEmail}
+                                onChange={(e) => setConfirmEmail(e.target.value)}
+                                required
+                            />
                         </div>
                         <div className="form-group my-2">
-                            <label for="password">Senha</label>
-                            <input type="password" id="password" className="form-control" placeholder="Sua senha de acesso" required />
+                            <label htmlFor="password">Senha</label>
+                            <input
+                                type="password"
+                                className={`form-control ${passwordError ? 'is-invalid' : ''}`}
+                                placeholder="Sua senha de acesso"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                onBlur={() => validatePassword(password)}
+                                required
+                            />
+                            {passwordError && (
+                                <div className="invalid-feedback">
+                                    {passwordError}
+                                </div>
+                            )}
                         </div>
                         <div className="form-group my-2">
-                            <label for="confirmPassword">Confirme a Senha</label>
-                            <input type="password" id="confirmPassword" className="form-control" placeholder="Confirme a senha" required />
+                            <label htmlFor="confirmPassword">Confirme a Senha</label>
+                            <input
+                                type="password"
+                                className="form-control"
+                                placeholder="Confirme a senha"
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                required
+                            />
                         </div>
-                        <div className="d-flex flex-row justify-content-between">
-                            <Link to="/" className="btn btn-dark my-2 d-flex align-items-center">
+                        <div className="d-flex flex-row gap-3">
+                            <button type="submit" className="btn btn-dark my-2 d-flex align-items-center">
                                 <span className="me-2">Registrar</span>
                                 <SignIn />
-                            </Link>
+                            </button>
                             <Link to="/login" className="btn btn-warning my-2 d-flex align-items-center">
                                 <span className="me-2">Voltar</span>
                                 <ArrowFatLeft />

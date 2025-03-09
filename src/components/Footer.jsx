@@ -7,10 +7,10 @@ function Footer() {
             <div className="row p-3 bg-secondary shadow-sm mt-auto">
                 <div className="col-6">
                     <div className="d-flex align-items-center">
-                        <img src={agotechLogo} alt="Logo Agrotech" className="me-3 main-logo" />
-                        <a href="./index.html">
+                        <Link to="/">
+                            <img src={agotechLogo} alt="Logo Agrotech" className="me-3 main-logo" />
                             <span className="fs-3 nav-text">Agrotech</span>
-                        </a>
+                        </Link>
                     </div>
                     <p>© Copyright 2024 Agrotech</p>
                 </div>
