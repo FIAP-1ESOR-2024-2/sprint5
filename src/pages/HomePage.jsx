@@ -11,32 +11,32 @@ function HomePage() {
 
     return (
         <>
-            <div class="m-5 d-flex gap-3">
-                <div class="p-5 bg-white rounded d-flex flex-column">
-                    <div class="d-flex align-items-center temp-info">
-                        <div class="me-3 d-flex flex-column">
-                            <CloudRain class="me-2 main-logo" />
+            <div className="m-5 d-flex gap-3">
+                <div className="p-5 bg-white rounded d-flex flex-column">
+                    <div className="d-flex align-items-center temp-info">
+                        <div className="me-3 d-flex flex-column">
+                            <CloudRain className="me-2 main-logo" />
                             <small>{currentTemp} °C</small>
                         </div>
                         <span>Chuva moderada em sua região</span>
                     </div>
-                    <div class="my-4 d-flex flex-column">
-                        <div class="d-flex flex-row justify-content-around">
-                            <div class="my-1">
+                    <div className="my-4 d-flex flex-column">
+                        <div className="d-flex flex-row justify-content-around">
+                            <div className="my-1">
                                 <small>Máx.</small>
-                                <div class="p-2 max-temp rounded">
+                                <div className="p-2 max-temp rounded">
                                     <span>{maxTemp} °C</span>
                                 </div>
                             </div>
-                            <div class="my-1">
+                            <div className="my-1">
                                 <small>Min.</small>
-                                <div class="p-2 min-temp rounded">
+                                <div className="p-2 min-temp rounded">
                                     <span>{minTemp} °C</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="temp-info d-flex justify-content-center">
-                            <ul class="list-unstyled">
+                        <div className="temp-info d-flex justify-content-center">
+                            <ul className="list-unstyled">
                                 <li>
                                     <small>Precipitação: {rainChance}%</small>
                                 </li>
@@ -50,7 +50,7 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div class="p-5 bg-white rounded">
+                <div className="p-5 bg-white rounded">
                     <span>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore et consectetur laudantium eum? Velit, aliquam a quis iste minima eius omnis magnam maiores impedit. Eum placeat dicta maxime quam. Ea?
                         Sequi laboriosam consequatur corrupti harum facere perspiciatis possimus aliquam dolorum magni ut. Esse sint hic quam expedita ut provident dignissimos odio dolore, natus ex molestiae sunt assumenda tempore. Enim, sit?

@@ -4,26 +4,26 @@ import { Keyhole, SignIn } from "@phosphor-icons/react"
 function LoginPage() {
     return (
         <>
-            <div class="m-5 d-flex flex-column align-items-center">
+            <div className="m-5 d-flex flex-column align-items-center">
             
-                <div class="p-5 bg-white rounded d-flex flex-column align-items-center mw-50">
-                    <Keyhole class="main-logo" />
+                <div className="p-5 bg-white rounded d-flex flex-column align-items-center mw-50">
+                    <Keyhole className="main-logo" />
 
                     <form>
-                        <div class="form-group my-2">
+                        <div className="form-group my-2">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Email cadastrado" id="emailLogin" />
+                            <input type="email" className="form-control" placeholder="Email cadastrado" id="emailLogin" />
                         </div>
-                        <div class="form-group my-2">
+                        <div className="form-group my-2">
                             <label>Senha</label>
-                            <input type="password" class="form-control" placeholder="Sua senha de acesso" id="senhaLogin" />
+                            <input type="password" className="form-control" placeholder="Sua senha de acesso" id="senhaLogin" />
                         </div>            
-                            <button id="btnEntrar" type="button" class="btn btn-dark my-2 d-flex align-items-center jutify-content-center">
-                                <span class="me-2">Entrar</span>
+                            <button id="btnEntrar" type="button" className="btn btn-dark my-2 d-flex align-items-center jutify-content-center">
+                                <span className="me-2">Entrar</span>
                                 <SignIn />
                             </button>               
 
-                        <div class="form-group mt-4 mb-2">
+                        <div className="form-group mt-4 mb-2">
                             <Link to="/register">
                                 Ainda não é cadastrado? Se cadastre aqui!
                             </Link>

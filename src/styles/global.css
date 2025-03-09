@@ -11,7 +11,16 @@
 
 body {
     min-height: 100vh;
+    overflow-x: hidden;
     background-color: #343E3D;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
 }
 
 a {
