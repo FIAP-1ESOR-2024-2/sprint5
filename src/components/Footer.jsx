@@ -22,7 +22,7 @@ function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="*" className="nav-text">
+                            <Link to="/about" className="nav-text">
                                 Sobre nós
                             </Link>
                         </li>
