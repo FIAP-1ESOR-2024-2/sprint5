@@ -17,12 +17,13 @@ function LoginPage() {
                         <div className="form-group my-2">
                             <label>Senha</label>
                             <input type="password" className="form-control" placeholder="Sua senha de acesso" id="senhaLogin" />
-                        </div>            
+                        </div>
+                        <Link to="/">
                             <button id="btnEntrar" type="button" className="btn btn-dark my-2 d-flex align-items-center jutify-content-center">
                                 <span className="me-2">Entrar</span>
                                 <SignIn />
-                            </button>               
-
+                            </button>
+                        </Link>
                         <div className="form-group mt-4 mb-2">
                             <Link to="/register">
                                 Ainda não é cadastrado? Se cadastre aqui!
