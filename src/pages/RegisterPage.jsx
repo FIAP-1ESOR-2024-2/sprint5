@@ -15,13 +15,11 @@ function RegisterPage() {
 
     // Validate email
     const validateEmail = (email) => {
-        // Check for @ symbol
         if (!email.includes('@')) {
             setEmailError('Email inválido')
             return false
         }
 
-        // Check for valid domain
         const parts = email.split('@')
         if (parts.length !== 2 || !parts[1].includes('.') || parts[1].length < 3) {
             setEmailError('Email inválido')
@@ -32,7 +30,6 @@ function RegisterPage() {
         return true
     };
 
-    // Validate password
     const validatePassword = (password) => {
         if (password.length < 6) {
             setPasswordError('Senha inválida')
@@ -43,14 +40,12 @@ function RegisterPage() {
         return true
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault()
 
         const isEmailValid = validateEmail(email)
         const isPasswordValid = validatePassword(password)
 
-        // If validation passes, you can proceed with registration
         if (isEmailValid && isPasswordValid) {
             console.log('Form is valid, submitting...')
 
