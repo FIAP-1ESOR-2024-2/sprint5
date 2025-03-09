@@ -4,6 +4,7 @@
   - [x] Aplicar o conceito de React em toda construção da versão
 - [x] No escopo da Fase 4, foi implementada uma funcionalidade e o fale conosco. Implementar agora uma nova funcionalidade (a sua escolha).
   - [x] Implementar página de fallback "Página não encontrada"
+  - [x] Implementar modelo SPA (Single Page Application) no projeto
 - [ ] Criar um Pitch Vídeo (PV) de ao menos 3 minutos com o conteúdo:
   - [ ] Apresentar a nova funcionalidade.
   - [ ] Explicar como foi aplicado o React na nova versão.
