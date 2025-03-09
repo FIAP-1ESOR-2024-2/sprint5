@@ -13,7 +13,6 @@ function RegisterPage() {
     const [emailError, setEmailError] = useState('')
     const [passwordError, setPasswordError] = useState('')
 
-    // Validate email
     const validateEmail = (email) => {
         if (!email.includes('@')) {
             setEmailError('Email inválido')
