@@ -2,7 +2,8 @@
 
 - [x] Considerar o Projeto da Fase 4 como referência para aplicarmos as novas exigências
   - [x] Aplicar o conceito de React em toda construção da versão
-- [ ] No escopo da Fase 4, foi implementada uma funcionalidade e o fale conosco. Implementar agora uma nova funcionalidade (a sua escolha).
+- [x] No escopo da Fase 4, foi implementada uma funcionalidade e o fale conosco. Implementar agora uma nova funcionalidade (a sua escolha).
+  - [x] Implementar página de fallback "Página não encontrada"
 - [ ] Criar um Pitch Vídeo (PV) de ao menos 3 minutos com o conteúdo:
   - [ ] Apresentar a nova funcionalidade.
   - [ ] Explicar como foi aplicado o React na nova versão.
