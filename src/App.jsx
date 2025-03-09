@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
-import NotFoundPage from './pages/NotFoundPage'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage.jsx'
 import AboutUsPage from "./pages/AboutUsPage.jsx";
 
 function App() {
