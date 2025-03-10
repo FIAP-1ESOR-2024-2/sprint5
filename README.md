@@ -13,3 +13,17 @@
 - [ ] O Deploy é o processo de colocar no ar (web) uma aplicação já concluída, ou seja, hospedar na internet o seu site.
   - [ ] O Deploy pode ser feito em algum provedor gratuito como o Vercel (pode ser em outro).
   - [ ] Inserir o link do Deploy (site hospedado) no arquivo texto do item.
+
+  # Integrantes do Grupo
+
+  - Enrico Brosque Palma RM559346;
+  - Jeferson Maciel RM553863;
+  - Felipe Vaz Coelho RM560129;
+
+  # Link do Vídeo
+
+  [Sprint 5]()
+
+  # Site Hospedado
+
+  [Agrotech](https://akaenrico.github.io/)
