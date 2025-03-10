@@ -10,9 +10,9 @@
   - [ ] Explicar como foi aplicado o React na nova versão.
   - [ ] O link deve estar contido na Home do projeto.
   - [ ] Em um arquivo texto, envie o nome completo dos integrantes, o link do vídeo e o link do Deploy
-- [ ] O Deploy é o processo de colocar no ar (web) uma aplicação já concluída, ou seja, hospedar na internet o seu site.
-  - [ ] O Deploy pode ser feito em algum provedor gratuito como o Vercel (pode ser em outro).
-  - [ ] Inserir o link do Deploy (site hospedado) no arquivo texto do item.
+- [x] O Deploy é o processo de colocar no ar (web) uma aplicação já concluída, ou seja, hospedar na internet o seu site.
+  - [x] O Deploy pode ser feito em algum provedor gratuito como o Vercel (pode ser em outro).
+  - [x] Inserir o link do Deploy (site hospedado) no arquivo texto do item.
 
   # Integrantes do Grupo
 
