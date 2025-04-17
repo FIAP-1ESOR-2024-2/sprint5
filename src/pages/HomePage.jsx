@@ -1,9 +1,11 @@
 import { CloudRain } from "@phosphor-icons/react"
+import ImageSlider from '../../src/components/Images/ImageSlider.jsx'
+
 
 function HomePage() {
 
     let currentTemp = 32;
-    let maxTemp = 42;
+    let maxTemp = 35;
     let minTemp = 20;
     let rainChance = 74;
     let humidity = 96;
@@ -51,13 +53,7 @@ function HomePage() {
                     </div>
                 </div>
                 <div className="p-5 bg-white rounded">
-                    <span>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore et consectetur laudantium eum? Velit, aliquam a quis iste minima eius omnis magnam maiores impedit. Eum placeat dicta maxime quam. Ea?
-                        Sequi laboriosam consequatur corrupti harum facere perspiciatis possimus aliquam dolorum magni ut. Esse sint hic quam expedita ut provident dignissimos odio dolore, natus ex molestiae sunt assumenda tempore. Enim, sit?
-                        Aliquam cumque harum quo? Quidem iure quae harum voluptate itaque nostrum aliquam, quo modi quisquam? Impedit, in, vitae consectetur exercitationem vel provident velit sit, alias autem voluptatem possimus veniam consequuntur.
-                        Modi dolor vero, nostrum sit expedita, delectus quam, asperiores voluptate magni optio doloribus? Minima, doloremque, ipsa alias harum commodi temporibus quia facere tempore, odit ratione aspernatur. Suscipit error aspernatur quasi!
-                        Molestiae provident non suscipit eum iste eos placeat quidem numquam pariatur rerum eveniet unde magnam veritatis similique ad perferendis, cum enim fugiat perspiciatis velit deserunt fuga. Dolor maiores porro recusandae!
-                    </span>
+                <ImageSlider />
                 </div>
             </div>
         </>
