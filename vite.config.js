@@ -7,6 +7,9 @@ export default defineConfig({
   server: {
     port: 8888, 
     open: true, 
+    hmr: {
+      port: 8888,
+    },
   },
   build: {
     sourcemap: true, 
