@@ -56,3 +56,12 @@ a {
     color: red;
     font-size: 1em;
 }
+
+.fundoModol{
+    background-color: lightgray; 
+    border-radius: 15px; 
+}
+
+.corVerde{
+background-color: #BDECB6;
+}
