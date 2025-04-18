@@ -1,17 +1,29 @@
 import { CloudRain } from "@phosphor-icons/react";
 import ImageSlider from "../../src/components/Images/ImageSlider.jsx";
+import Dropdown from '../components/Dropdown/Dropdown.jsx';
+import { useLocation } from "react-router-dom";
 
 function HomePage() {
-  let currentTemp = 32;
-  let maxTemp = 35;
-  let minTemp = 20;
-  let rainChance = 74;
-  let humidity = 96;
-  let windStrength = 11;
+  const location = useLocation();
+  const { informacao } = location.state || {};
+  const currentTemp = 32;
+  const maxTemp = 35;
+  const minTemp = 20;
+  const rainChance = 74;
+  const humidity = 96;
+  const windStrength = 11;
+
+  let paramNome = informacao !== undefined ? informacao.nome : "Sem Nome";
+  let paramEmail = informacao !== undefined ? informacao.email : "Sem Email";
 
   return (
     <>
-      <div className="m-5 d-flex gap-3">
+    <div className="row">
+        <div className="col-12">
+           <Dropdown nomeUsuario={paramNome} emailUsuario={paramEmail}></Dropdown>
+        </div>
+        </div>
+      <div className="m-5 d-flex gap-3">        
         <div className="p-5 bg-success-subtle rounded d-flex flex-column">
           <div className="bg-dark-subtle rounded-4 border border-black">
             <div className="d-flex align-items-center temp-info px-4">

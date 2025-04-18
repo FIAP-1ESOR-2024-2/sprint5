@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
-import './style.css'
-import img1 from './img/seguro-rural-brasil-agronegocio-noticia.jpg/'
-import img2 from './img/Expoagro.jpeg'
-import img3 from './img/agro_widelg.png'
+import './style.css';
+import img1 from './img/seguro-rural-brasil-agronegocio-noticia.jpg/';
+import img2 from './img/Expoagro.jpeg';
+import img3 from './img/agro_widelg.png';
+import img4 from './img/cotacoes-agricolas.png';
+import img5 from './img/reuniao_CNA.jpg';
 
 const images = [
   {
@@ -20,6 +22,16 @@ const images = [
     titulo: 'Expoagro 2025 é lançada oficialmente e conta com a parceria do Sistema Famato',
      url: "https://www.cnabrasil.org.br/noticias/expoagro-2025-e-lancada-oficialmente-e-conta-com-a-parceria-do-sistema-famato"
     }, 
+    {
+      src: img4, 
+      titulo: 'Cotações Agrícolas para esta Sexta-feira 11 de Abril 2025',
+       url: "https://rrmais.com.br/noticia/agro/cotacoes-agricolas-para-esta-sexta-feira-11-de-abril-2025"
+      }, 
+    {
+      src: img5, 
+      titulo: 'Comissão Nacional de Infraestrutura e Logística da CNA debate iniciativas para superar gargalos do setor agropecuário',
+       url: "https://cnabrasil.org.br/noticias/comissao-nacional-de-infraestrutura-e-logistica-da-cna-debate-iniciativas-para-superar-gargalos-do-setor-agropecuario"
+      }, 
 ];
 
 export default function ImageSlider() {
