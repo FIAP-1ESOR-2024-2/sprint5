@@ -5,7 +5,7 @@ function InfoDropdown({ nomeUsuario, emailUsuario }) {
   const [aberto, setAberto] = useState(false);
 
   return (
-    <div style={{ position: 'relative', display: 'inline-block', float: "right" }}>
+    <div style={{ position: 'relative', display: 'inline-block', float: "right", margin: "5px 10px 0px 0px" }}>
       <button
         onClick={() => setAberto(!aberto)}
         style={{
