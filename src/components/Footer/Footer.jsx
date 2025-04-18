@@ -13,7 +13,7 @@ function Footer() {
                             <span className="fs-3 text-color">Agrotech</span>
                         </Link>
                     </div>
-                    <p className="mt-3 text-color">© Copyright 2024 Agrotech</p>
+                    <p className="mt-3 text-color">© Copyright 2025 Agrotech</p>
                 </div>
                 <div className="col-5">                
                     <ul>

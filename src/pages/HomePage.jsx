@@ -1,30 +1,34 @@
 import { CloudRain } from "@phosphor-icons/react";
 import ImageSlider from "../../src/components/Images/ImageSlider.jsx";
-import Dropdown from '../components/Dropdown/Dropdown.jsx';
+import Dropdown from "../components/Dropdown/Dropdown.jsx";
 import { useLocation } from "react-router-dom";
+import { FaCarrot } from "react-icons/fa";
 
 function HomePage() {
   const location = useLocation();
   const { informacao } = location.state || {};
-  const currentTemp = 32;
-  const maxTemp = 35;
-  const minTemp = 20;
-  const rainChance = 74;
-  const humidity = 96;
-  const windStrength = 11;
+  const currentTemp = 25;
+  const maxTemp = 27;
+  const minTemp = 18;
+  const rainChance = 40;
+  const humidity = 62;
+  const windStrength = 3;
 
   let paramNome = informacao !== undefined ? informacao.nome : "Sem Nome";
   let paramEmail = informacao !== undefined ? informacao.email : "Sem Email";
 
   return (
     <>
-    <div className="row">
+      <div className="row">
         <div className="col-12">
-           <Dropdown nomeUsuario={paramNome} emailUsuario={paramEmail}></Dropdown>
+          <Dropdown
+            nomeUsuario={paramNome}
+            emailUsuario={paramEmail}
+          ></Dropdown>
         </div>
-        </div>
-      <div className="m-5 d-flex gap-3">        
-        <div className="p-5 bg-success-subtle rounded d-flex flex-column">
+      </div>
+      <div className="m-5 d-flex gap-3 shadow-lg">
+        <div className="p-5 bg-success-subtle rounded d-flex flex-column ">
           <div className="bg-dark-subtle rounded-4 border border-black">
             <div className="d-flex align-items-center temp-info px-4">
               <div className="me-3 d-flex flex-column">
@@ -59,6 +63,31 @@ function HomePage() {
                   <li>
                     <small>Vento: {windStrength} km/h</small>
                   </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="bg-dark-subtle rounded-4 border border-black mt-3">
+            <div className="row">
+              <div className="col-12 text-center">
+                <a className="text-decoration-underline"
+                  href="https://casavogue.globo.com/Arquitetura/Paisagismo/noticia/2021/04/horta-em-casa-saiba-melhores-especies-para-plantar-no-outono.html"
+                  target="_blank"
+                >
+                  <FaCarrot />
+                  <span className="text-lg"> Hortaliças para o Outono</span>
+                </a>
+              </div>
+              <div className="col-12">
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">acelga</li>
+                  <li className="list-group-item">rúcula</li>
+                  <li className="list-group-item">alface de inverno</li>
+                  <li className="list-group-item">beterraba</li>
+                  <li className="list-group-item">brócolis</li>
+                  <li className="list-group-item">ervilha</li>
+                  <li className="list-group-item">espinafre</li>
+                  <li className="list-group-item">couve-manteiga</li>
                 </ul>
               </div>
             </div>
